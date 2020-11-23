@@ -13,3 +13,11 @@ document.querySelector("#pause").addEventListener("click", function() {
 	video.pause();
 });
 
+document.querySelector("#slower").addEventListener("click", function() {
+	video.playbackRate *= .9;
+});
+
+document.querySelector("#faster").addEventListener("click", function() {
+	video.playbackRate /= .9;
+});
+
